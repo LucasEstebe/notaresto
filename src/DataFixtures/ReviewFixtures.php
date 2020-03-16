@@ -2,10 +2,12 @@
 
 namespace App\DataFixtures;
 
+
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 
-class ReviewFixtures extends Fixture
+class ReviewFixtures extends Fixture implements DependentFixtureInterface
 {
     public function load(ObjectManager $manager)
     {
@@ -13,5 +15,15 @@ class ReviewFixtures extends Fixture
         // $manager->persist($product);
 
         $manager->flush();
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function getDependencies()
+    {
+        return array(
+            RestaurantFixtures::class,
+        );
     }
 }

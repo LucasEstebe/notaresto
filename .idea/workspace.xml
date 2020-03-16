@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c41de0a1-95d7-44f2-93bb-355222874b26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/CityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/RestaurantController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/RestaurantPictureController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/ReviewController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200316133945.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/city/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/restaurant/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/restaurant_picture/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/review/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/notaresto.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/notaresto.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/CityFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/CityFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/RestaurantFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/RestaurantFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/RestaurantPictureFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/RestaurantPictureFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ReviewFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ReviewFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +135,7 @@
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ZDAEnMXL2vc0uvw6ERqxvmbPRs" />
@@ -167,7 +168,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584363181964</updated>
-      <workItem from="1584363183258" duration="3783000" />
+      <workItem from="1584363183258" duration="6401000" />
     </task>
     <task id="LOCAL-00001" summary="Restaurant Entity Created">
       <created>1584363718124</created>
@@ -211,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584365948428</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixtures created">
+      <created>1584367458690</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584367458690</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,12 +233,21 @@
     <MESSAGE value="Review Entity Created" />
     <MESSAGE value="Relations Created" />
     <MESSAGE value="setCreatedAt for Restaurant and Review added" />
-    <option name="LAST_COMMIT_MESSAGE" value="setCreatedAt for Restaurant and Review added" />
+    <MESSAGE value="Fixtures created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixtures created" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="345" y="5" key="CommitChangelistDialog2" timestamp="1584365947693">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584367714117">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="345" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584365947693" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1584367714117" />
+    <state x="345" y="5" key="CommitChangelistDialog2" timestamp="1584367457759">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="345" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584367457759" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1584369398882">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584369398882" />
   </component>
 </project>
