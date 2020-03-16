@@ -5,6 +5,7 @@ namespace App\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints\Date;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ReviewRepository")
@@ -52,6 +53,7 @@ class Review
     public function __construct()
     {
         $this->childs = new ArrayCollection();
+        $this->setCreatedAt(new \DateTime());
     }
 
     public function getId(): ?int
