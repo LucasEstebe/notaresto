@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -30,6 +32,27 @@ class Review
      * @ORM\Column(type="datetime")
      */
     private $createdAt;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Restaurant", inversedBy="reviews")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $restaurant;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Review", inversedBy="reviews")
+     */
+    private $parent;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Review", mappedBy="parent")
+     */
+    private $childs;
+
+    public function __construct()
+    {
+        $this->childs = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -68,6 +91,61 @@ class Review
     public function setCreatedAt(\DateTimeInterface $createdAt): self
     {
         $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    public function getRestaurant(): ?Restaurant
+    {
+        return $this->restaurant;
+    }
+
+    public function setRestaurant(?Restaurant $restaurant): self
+    {
+        $this->restaurant = $restaurant;
+
+        return $this;
+    }
+
+    public function getParent(): ?self
+    {
+        return $this->parent;
+    }
+
+    public function setParent(?self $parent): self
+    {
+        $this->parent = $parent;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|self[]
+     */
+    public function getChilds(): Collection
+    {
+        return $this->childs;
+    }
+
+    public function addChild(self $child): self
+    {
+        if (!$this->childs->contains($child)) {
+            $this->childs[] = $child;
+            $child->setParent($this);
+        }
+
+        return $this;
+    }
+
+    public function removeChild(self $child): self
+    {
+        if ($this->childs->contains($child)) {
+            $this->childs->removeElement($child);
+            // set the owning side to null (unless already changed)
+            if ($child->getParent() === $this) {
+                $child->setParent(null);
+            }
+        }
 
         return $this;
     }
