@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Users{% endblock %}
+
+{% block body %}
+    <ul class="border border-primary col-12 list-group  list-unstyled row">
+        {% for user in users |slice(0, 10)%}
+            <li class="list-item my-5">
+                <div class="card w-100" style="width: 18rem;">
+                    <img src="https://picsum.photos/400/400" class="card-img-top w-25" alt="{{ user.email }}">
+                    <div class="card-body w-100">
+                        <small>User n° {{ user.id }}</small>
+                        <h5 class="card-title">User: {{ user.email }}</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a><br>
+                    </div>
+                </div>
+            </li>
+            <hr>
+        {% endfor %}
+    </ul>
+{% endblock %}
