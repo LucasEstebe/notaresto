@@ -22,19 +22,25 @@ class RestaurantRepository extends ServiceEntityRepository
     // /**
     //  * @return Restaurant[] Returns an array of Restaurant objects
     //  */
-    /*
-    public function findByExampleField($value)
+
+    public function findBest()
     {
-        return $this->createQueryBuilder('r')
-            ->andWhere('r.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('r.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
+        $entityManager = $this->getEntityManager();
+
+        $query = $entityManager->createQuery(
+            'SELECT r.name, r.id, c.name as city, AVG(reviews.rating) AS rating
+        FROM App\Entity\Restaurant r
+        INNER JOIN r.reviews reviews
+        INNER JOIN r.city c
+        GROUP BY r.id
+        ORDER BY rating DESC'
+        );
+
+
+        return $query->getResult();
+        //->andWhere('r.exampleField = :val')
+        //->setParameter('val', $value)
     }
-    */
 
     /*
     public function findOneBySomeField($value): ?Restaurant

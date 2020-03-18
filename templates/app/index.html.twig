@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}NotaResto{% endblock %}
+
+{% block body %}
+<ul class="list-group list-unstyled">
+    {% for resto in restos |slice(0, 10)%}
+    <li class="list-item">
+        <div class="card" style="width: 18rem;">
+            <img src="https://picsum.photos/400/400" class="card-img-top" alt="{{ resto.name }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ resto.name }}</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a><br>
+                <h4>AVG Rating: {{ resto.rating|number_format(1)}}</h4>
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
