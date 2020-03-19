@@ -16,7 +16,7 @@ class CityFixtures extends Fixture
         for ($i = 0; $i < 1000; $i++) {
             $city = new City();
             $city->setName($faker->city);
-            $city->setZipcode($faker->postcode);
+            $city->setZipcode( str_replace(' ', '', $faker->postcode) );
             $manager->persist($city);
         }
         $manager->flush();
