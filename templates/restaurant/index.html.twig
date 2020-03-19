@@ -4,9 +4,9 @@
 
 {% block body %}
     <ul class="list-group  list-unstyled">
-        <li class="list-item">
-            <label for="zipcode">Zipcode</label>
-            <input type="number" name="zipcode" id="zipcode">
+        <label for="zipcode">Zipcode</label>
+        <li class="list-item mb-5 input-group">
+            <input type="number" name="zipcode" id="zipcode" class="form-control">
             <a href="#" class="btn btn-primary">Search</a><br>
         </li>
         {% for resto in restos |slice(0, 10)%}
@@ -16,7 +16,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ resto.name }}</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="{{path('app')}}" class="btn btn-primary">See restaurant</a><br>
+                        <a href="{{ path('restaurant_show', {'restaurant' : resto.id}) }}" class="btn btn-primary">See restaurant</a><br>
                         <h5 class="card-title">{{ resto.city.name }}</h5>
                     </div>
                 </div>

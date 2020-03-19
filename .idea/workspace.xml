@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c41de0a1-95d7-44f2-93bb-355222874b26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/RestaurantType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/restaurant/form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/notaresto.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/notaresto.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/ReviewType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/restaurant/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/RestaurantController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RestaurantController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/__partials/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/__partials/header.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/restaurant/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/restaurant/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +179,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584363181964</updated>
-      <workItem from="1584363183258" duration="34304000" />
+      <workItem from="1584363183258" duration="37725000" />
     </task>
     <task id="LOCAL-00001" summary="Restaurant Entity Created">
       <created>1584363718124</created>
@@ -257,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584528148481</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Restaurant and user index">
+      <created>1584542336345</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1584542336345</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,19 +276,20 @@
     <MESSAGE value="Faker set up for cities" />
     <MESSAGE value="Landing page displays 10 best restos" />
     <MESSAGE value="Authentication set up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Authentication set up" />
+    <MESSAGE value="Restaurant and user index" />
+    <option name="LAST_COMMIT_MESSAGE" value="Restaurant and user index" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1421" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584529815997">
+    <state x="-1421" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1584542531944">
       <screen x="-1920" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1584367714117" />
-    <state x="-1421" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1536.824@-1920.0.1536.824" timestamp="1584529815997" />
-    <state x="-1575" y="5" key="CommitChangelistDialog2" timestamp="1584528147523">
+    <state x="-1421" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1536.824@-1920.0.1536.824" timestamp="1584542531944" />
+    <state x="-1575" y="5" key="CommitChangelistDialog2" timestamp="1584542335517">
       <screen x="-1920" y="0" width="1536" height="824" />
     </state>
     <state x="345" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584524115619" />
-    <state x="-1575" y="5" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1536.824@-1920.0.1536.824" timestamp="1584528147523" />
+    <state x="-1575" y="5" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1536.824@-1920.0.1536.824" timestamp="1584542335517" />
     <state x="-1371" y="167" key="FileChooserDialogImpl" timestamp="1584529747938">
       <screen x="-1920" y="0" width="1536" height="824" />
     </state>

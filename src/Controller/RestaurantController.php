@@ -3,7 +3,9 @@
 namespace App\Controller;
 
 use App\Entity\Restaurant;
+use App\Entity\Review;
 use App\Form\RestaurantType;
+use App\Form\ReviewType;
 use App\Repository\RestaurantRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -32,13 +34,13 @@ class RestaurantController extends AbstractController
      */
     public function new(Request $request) : Response
     {
-        $article = new Restaurant();
-        $form = $this->createForm(RestaurantType::class, $article);
+        $restaurant = new Restaurant();
+        $form = $this->createForm(RestaurantType::class, $restaurant);
         $form->handleRequest($request);
 
         if($form->isSubmitted() && $form->isValid()){
             $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($article);
+            $entityManager->persist($restaurant);
             $entityManager->flush();
 
             $this->addFlash(
@@ -53,4 +55,30 @@ class RestaurantController extends AbstractController
             'form' => $form->createView()
         ]);
     }
+
+    /**
+     * @Route("/restaurant/{restaurant}", name="restaurant_show", requirements={"restaurant"="\d+"})
+     * @param Restaurant $restaurant
+     * @return Response
+     */
+    public function show(Restaurant $restaurant) : Response
+    {
+        $review = new Review();
+        $form = $this->createForm(ReviewType::class, $review);
+
+    /*    if($form->isSubmitted() && $form->isValid()){
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($review);
+            $entityManager->flush();
+
+            $this->addFlash(
+                'info',
+                'Your changes were saved!'
+            );
+
+            return $this->redirectToRoute('restaurant');
+        }*/
+        return $this->render('restaurant/show.html.twig', ['restaurant' => $restaurant, 'form' => $form->createView()]);
+    }
+
 }
