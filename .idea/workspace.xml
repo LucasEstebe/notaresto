@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c41de0a1-95d7-44f2-93bb-355222874b26" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RestaurantController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RestaurantController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RestaurantType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RestaurantType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/__partials/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/__partials/header.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/restaurant/form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/restaurant/form.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +158,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/restaurant" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -267,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584622676777</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Relations and fixtures updated">
+      <created>1584691554737</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1584691554737</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,19 +308,23 @@
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1584367714117" />
     <state x="-1421" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1920.0.1536.824@-1920.0.1536.824" timestamp="1584542531944" />
-    <state x="345" y="5" key="CommitChangelistDialog2" timestamp="1584622675957">
+    <state x="345" y="5" key="CommitChangelistDialog2" timestamp="1584691553851">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="345" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584622675957" />
+    <state x="345" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584691553851" />
     <state x="-1575" y="5" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1536.824@-1920.0.1536.824" timestamp="1584542335517" />
-    <state x="-1371" y="167" key="FileChooserDialogImpl" timestamp="1584529747938">
+    <state x="-1371" y="167" key="FileChooserDialogImpl" timestamp="1584692413649">
       <screen x="-1920" y="0" width="1536" height="824" />
     </state>
-    <state x="-1371" y="167" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1536.824@-1920.0.1536.824" timestamp="1584529747938" />
+    <state x="-1371" y="167" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1536.824@-1920.0.1536.824" timestamp="1584692413649" />
     <state x="438" y="227" key="NewPhpClassDialog" timestamp="1584617166893">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="438" y="227" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1584617166893" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1584691556996">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584691556996" />
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584616972822">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
