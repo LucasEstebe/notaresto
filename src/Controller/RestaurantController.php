@@ -28,25 +28,24 @@ class RestaurantController extends AbstractController
     }
 
     /**
-     * @Route("/restaurant/new", name="restaurant_form", methods={"GET", "POST"})
-     * @param Request $request
-     * @return Response
+     * Affiche et gère le formulaire de création de restaurant
+     * @Route("/restaurant/new", name="restaurant_new", methods={"GET", "POST"})
      */
-    public function new(Request $request) : Response
+    public function new(Request $request)
     {
         $restaurant = new Restaurant();
+
         $form = $this->createForm(RestaurantType::class, $restaurant);
+
         $form->handleRequest($request);
 
-        if($form->isSubmitted() && $form->isValid()){
+        if ($form->isSubmitted() && $form->isValid()) {
+            $restaurant = $form->getData();
+            $restaurant->setUser($this->getUser());
+
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($restaurant);
             $entityManager->flush();
-
-            $this->addFlash(
-                'info',
-                'Your changes were saved!'
-            );
 
             return $this->redirectToRoute('restaurant');
         }
@@ -55,7 +54,6 @@ class RestaurantController extends AbstractController
             'form' => $form->createView()
         ]);
     }
-
     /**
      * @Route("/restaurant/{restaurant}", name="restaurant_show", requirements={"restaurant"="\d+"})
      * @param Restaurant $restaurant
